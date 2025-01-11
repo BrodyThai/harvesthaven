@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/svg+xml" href="images/leavesfavicon.svg">
+    <link rel="icon" type="image/png" href="images/leavesfavicon.png">
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation-->
+    <div class="navbar">
+       
+        <!--logo-->
+        <div class="navbar-logo">
+            <a href="index.html"><img src="images/leavesfavicon.png" alt="Vegan Logo"></a>
+            <a href="index.html">Harvest Haven</a>
+        </div>
+
+        <!--Links container-->
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="location.html" id="Locations">Locations</a>
+        </div>
+
+        <!-- Dropdown icon on smaller devices -->
+        <div class="dropdown-icon" onclick="toggleNavbar()">
+            &#9776; <!-- Unicode for dropdown icon -->
+        </div>
+       
+       <script>
+            //Toggle the navbar links on and off
+            function toggleNavbar() {
+                const navbar = document.querySelector('.navbar-links');
+                navbar.classList.toggle('show');
+            }
+        </script>
+    </div>
+
+    <!--Dynamic Menu Container-->
+    <div class="menu-container">
+        <div class="page-title">
+            <h1>MENU</h1>
+        </div>
+        <div class="menu-slider">
+            <button class="menu-button" id="all" data-category="all">All</button>
+            <button class="menu-button" id="drinks" data-category="drinks">Drinks</button>
+            <button class="menu-button" id="breakfast" data-category="breakfast">Breakfast</button>
+            <button class="menu-button" id="lunch" data-category="lunch">Lunch</button>
+        </div>
+
+    <!-- Menu Grid -->
+    <div class="menu-grid">
+    <!-- Breakfast Item: Loukoumades -->
+    <div class="menu-item breakfast" onclick="toggleIngredients(this)">
+        <img src="images/menu/loukoumades.png" alt="Loukoumades">
+        <h3>Loukoumades</h3>
+        <div id="loukoumades" class="ingredients-list">
+            <ul>
+                <li>Flour</li>
+                <li>Water</li>
+                <li>Yeast</li>
+                <li>Sugar</li>
+                <li>Olive Oil</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breakfast Item: Bougatsa -->
+    <div class="menu-item breakfast" onclick="toggleIngredients(this)">
+        <img src="images/menu/bougatsa.png" alt="Bougatsa">
+        <h3>Bougatsa</h3>
+        <div id="bougatsa" class="ingredients-list">
+            <ul>
+                <li>Phyllo Dough</li>
+                <li>Vegan Custard</li>
+                <li>Powdered Sugar</li>
+                <li>Cinnamon</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breakfast Item: Koulouri -->
+    <div class="menu-item breakfast" onclick="toggleIngredients(this)">
+        <img src="images/menu/koulouri.png" alt="Koulouri">
+        <h3>Koulouri</h3>
+        <div id="koulouri" class="ingredients-list">
+            <ul>
+                <li>Flour</li>
+                <li>Sesame Seeds</li>
+                <li>Water</li>
+                <li>Yeast</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breakfast Item: Avocado Toast -->
+    <div class="menu-item breakfast" onclick="toggleIngredients(this)">
+        <img src="images/menu/avocadotoast.png" alt="Avocado Toast">
+        <h3>Avocado Toast</h3>
+        <div id="avocado-toast" class="ingredients-list">
+            <ul>
+                <li>Avocado</li>
+                <li>Sourdough Bread</li>
+                <li>Olive Oil</li>
+                <li>Salt & Pepper</li>
+                <li>Lemon Juice</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breakfast Item: Yogurt Parfait -->
+    <div class="menu-item breakfast" onclick="toggleIngredients(this)">
+        <img src="images/menu/yogurtparfait.png" alt="Yogurt Parfait">
+        <h3>Yogurt Parfait</h3>
+        <div id="yogurt-parfait" class="ingredients-list">
+            <ul>
+                <li>Plant-based Yogurt</li>
+                <li>Granola</li>
+                <li>Fresh Berries</li>
+                <li>Chia Seeds</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breakfast Item: Spanakopita -->
+    <div class="menu-item breakfast" onclick="toggleIngredients(this)">
+        <img src="images/menu/spanakopita.png" alt="Spanakopita">
+        <h3>Spanakopita</h3>
+        <div id="spanakopita" class="ingredients-list">
+            <ul>
+                <li>Spinach</li>
+                <li>Vegan Feta Cheese</li>
+                <li>Phyllo Dough</li>
+                <li>Herbs</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Moussaka -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/moussaka.png" alt="Moussaka">
+        <h3>Moussaka</h3>
+        <div id="moussaka" class="ingredients-list">
+            <ul>
+                <li>Eggplant</li>
+                <li>Potatoes</li>
+                <li>Lentils</li>
+                <li>Tomato Sauce</li>
+                <li>Béchamel Sauce</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Melitzanosalata -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/melitzanosalata.png" alt="Melitzanosalata">
+        <h3>Melitzanosalata</h3>
+        <div id="melitzanosalata" class="ingredients-list">
+            <ul>
+                <li>Eggplant</li>
+                <li>Garlic</li>
+                <li>Olive Oil</li>
+                <li>Lemon Juice</li>
+                <li>Fresh Parsley</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Greek Salad -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/greeksalad.png" alt="Greek Salad">
+        <h3>Greek Salad</h3>
+        <div id="greek-salad" class="ingredients-list">
+            <ul>
+                <li>Cucumber</li>
+                <li>Tomatoes</li>
+                <li>Olives</li>
+                <li>Vegan Feta Cheese</li>
+                <li>Olive Oil</li>
+                <li>Oregano</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Vegan Gyros -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/gyros.png" alt="Vegan Gyros">
+        <h3>Vegan Gyros</h3>
+        <div id="vegan-gyros" class="ingredients-list">
+            <ul>
+                <li>Tofu</li>
+                <li>Pita bread</li>
+                <li>Tomato</li>
+                <li>Onion</li>
+                <li>Vegan Tzatziki</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Pita Bread -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/pitabread.png" alt="Pita Bread">
+        <h3>Pita Bread</h3>
+        <div id="pita-bread" class="ingredients-list">
+            <ul>
+                <li>Flour</li>
+                <li>Yeast</li>
+                <li>Olive Oil</li>
+                <li>Water</li>
+                <li>Salt</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Dolmades -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/dolmades.png" alt="Dolmades">
+        <h3>Dolmades</h3>
+        <div id="dolmades" class="ingredients-list">
+            <ul>
+                <li>Vine Leaves</li>
+                <li>Rice</li>
+                <li>Herbs</li>
+                <li>Lemon</li>
+                <li>Olive Oil</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Tabbouleh -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/tabbouleh.png" alt="Tabbouleh">
+        <h3>Tabbouleh</h3>
+        <div id="tabbouleh" class="ingredients-list">
+            <ul>
+                <li>Parsley</li>
+                <li>Bulgur Wheat</li>
+                <li>Tomato</li>
+                <li>Cucumber</li>
+                <li>Olive Oil</li>
+                <li>Lemon Juice</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Glow Bowl -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/glowbowl.png" alt="Glow Bowl">
+        <h3>Glow Bowl</h3>
+        <div id="glow-bowl" class="ingredients-list">
+            <ul>
+                <li>Quinoa</li>
+                <li>Avocado</li>
+                <li>Roasted Vegetables</li>
+                <li>Kale</li>
+                <li>Hummus</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Lunch Item: Mother Earth -->
+    <div class="menu-item lunch" onclick="toggleIngredients(this)">
+        <img src="images/menu/motherearth.png" alt="Mother Earth">
+        <h3>Mother Earth</h3>
+        <div id="mother-earth" class="ingredients-list">
+            <ul>
+                <li>Sweet Potatoes</li>
+                <li>Chickpeas</li>
+                <li>Spinach</li>
+                <li>Quinoa</li>
+                <li>Avocado</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drink Item: Cherry Lemon Iced Tea -->
+    <div class="menu-item drinks" onclick="toggleIngredients(this)">
+        <img src="images/menu/cherrylemonicedtea.png" alt="Cherry Lemon Iced Tea">
+        <h3>Cherry Lemon Iced Tea</h3>
+        <div id="cherry-lemon-iced-tea" class="ingredients-list">
+            <ul>
+                <li>Cherry Juice</li>
+                <li>Lemon</li>
+                <li>Tea</li>
+                <li>Ice</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drink Item: Greek Mountain Tea -->
+    <div class="menu-item drinks" onclick="toggleIngredients(this)">
+        <img src="images/menu/greekmountaintea.png" alt="Greek Mountain Tea">
+        <h3>Greek Mountain Tea</h3>
+        <div id="greek-mountain-tea" class="ingredients-list">
+            <ul>
+                <li>Greek Mountain Tea Leaves</li>
+                <li>Lemon</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drink Item: Greek Iced Coffee -->
+    <div class="menu-item drinks" onclick="toggleIngredients(this)">
+        <img src="images/menu/greekicedcoffee.png" alt="Greek Iced Coffee">
+        <h3>Greek Iced Coffee</h3>
+        <div id="greek-iced-coffee" class="ingredients-list">
+            <ul>
+                <li>Greek Coffee</li>
+                <li>Ice</li>
+                <li>Sugar</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drink Item: Mint Lemonade -->
+    <div class="menu-item drinks" onclick="toggleIngredients(this)">
+        <img src="images/menu/mintlemonade.png" alt="Mint Lemonade">
+        <h3>Mint Lemonade</h3>
+        <div id="mint-lemonade" class="ingredients-list">
+            <ul>
+                <li>Lemon</li>
+                <li>Mint</li>
+                <li>Sugar</li>
+                <li>Water</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drink Item: Soda -->
+    <div class="menu-item drinks" onclick="toggleIngredients(this)">
+        <img src="images/menu/softdrinks.png" alt="Soda">
+        <h3>Soda</h3>
+        <div id="soda" class="ingredients-list">
+            <ul>
+                <li>Carbonated Water</li>
+                <li>Flavoring</li>
+                <li>Sugar</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drink Item: Water -->
+    <div class="menu-item drinks" onclick="toggleIngredients(this)">
+        <img src="images/menu/water.png" alt="Water">
+        <h3>Water</h3>
+        <div id="water" class="ingredients-list">
+            <ul>
+                <li>What do you think?</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!--Script for Menu Slider-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Get the category from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+        // Get all the menu items
+        const menuItems = document.querySelectorAll('.menu-item');
+        // Loop through each menu item and show or hide it based on the category
+        menuItems.forEach(item => {
+            // If there's no category or the item matches the category, show it
+            if (!category || item.classList.contains(category)) {
+                item.style.display = 'inline-block'; // Shows the item
+            } else {
+                item.style.display = 'none'; // Hides the item
+            }
+        });
+        // Handle the filter buttons
+        const buttons = document.querySelectorAll('.menu-button');
+        // Loop through each button and set up an event listener
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const selectedCategory = button.getAttribute('data-category');
+                // If "All" is clicked, show all items
+                const newCategory = selectedCategory === "all" ? "" : selectedCategory;
+                // Change the page URL to show the selected category
+                window.location.href = `menu.html?category=${newCategory}`;
+            });
+        });
+    });
+    </script>
+
+    <!--SEPERATE Script for Ingredients -->
+    <script>
+        function toggleIngredients(menuItem) {
+            // Toggle the 'show-ingredients' class on the clicked menu item
+            menuItem.classList.toggle('show-ingredients');
+        }
+    </script>
+
+    <!--Footer-->
+    <footer class="footer">
+        <!--Newsletter-->
+        <div class="footer-newsletter">
+            <h2>Stay In Touch!</h2>
+            <p>Sign up for new menu additions, exclusive offers, and more</p>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <!--Description-->
+        <div class="footer-description">
+            <h2>Our Mission</h2>
+            <p>At Harvest Haven, we intend to honor Greek culture and its contributions to culinary art while incorporating our own vegan spin on the classics. This hybrid allows us promote our goal to a sustainable future.</p>
+        </div>
+
+        <!--Contacts for Footer-->
+        <div class="footer-contacts">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>123-456-7890</li>
+                <li>harvesthaven@fake.com</li>
+                <li>8214 Sunset Avenue, Los Angeles, CA 90046</li>
+            </ul>
+        </div>
+
+        <!--Opening Hours for Footer-->
+        <div class="footer-hours">
+            <h2>Opening Hours</h2>
+            <ul>
+                <li>Monday - Friday: 6:00 a.m. - 4:00 p.m.</li>
+                <li>Saturday - Sunday: 6:00 a.m. - 5:00 p.m.</li>
+            </ul>
+        </div>
+
+        <!--Footer Links-->
+        <div class="footer-links">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+            <!--Social Media Links-->
+            <div class="footer-socialmedia">
+                <a href="https://www.youtube.com" target="_blank" ><img src="images/social-media/youtubelogo.png"></a>
+                <a href="https://www.instagram.com" target="_blank" ><img src="images/social-media/instagramlogo.png"></a>
+                <a href="https://x.com/?mx=2" target="_blank" ><img src="images/social-media/twitterlogo.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

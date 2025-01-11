@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Haven</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/leavesfavicon.png">
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Font Family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation-->
+    <div class="navbar">
+        <!--logo-->
+        <div class="navbar-logo">
+            <a href="index.html"><img src="images/leavesfavicon.png" alt="Vegan Logo"></a>
+            <a href="index.html">Harvest Haven</a>
+        </div>
+
+        <!--Links container-->
+        <div class="navbar-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="location.html" id="Locations">Locations</a>
+        </div>
+
+        <!-- Dropdown icon on smaller devices -->
+        <div class="dropdown-icon" onclick="toggleNavbar()">
+            &#9776; <!-- Unicode for dropdown icon -->
+        </div>
+       
+       <script>
+            //Toggle the navbar links on and off
+            function toggleNavbar() {
+                const navbar = document.querySelector('.navbar-links');
+                navbar.classList.toggle('show');
+            }
+        </script>
+    </div>
+
+    <!--Welcome Window-->
+    <div class="welcome-container">
+        <div class="welcome-container-barrier">
+            <img id="welcome-stem" src="images/decoration/decoration-stem.png">
+            <img id="welcome-pitahand" src="images/decoration/decoration-pitahand.png">
+            <img id="welcome-leaf" src="images/decoration/decoration-leaf.png">
+        </div>
+        <div class="welcome-container-text">
+            <h2>Welcome To</h2>
+            <h1>Harvest Haven</h1>
+            <h3>Vegan Greek Cuisine</h3>
+            <a href="menu.html">View Menu</a>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <!--Spotlight of The Week-->
+        <div class="feed-container">
+            <img src="images/welcome/welcome-loukoumades.jpg">
+            <div class="feed-container-text">
+                <h2>Spotlight of The Week</h2>
+                <h1>LOUKOUMADES</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Slideshow container-->
+    <div class="slideshow-container">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+
+        <!--Slides-->
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slideshow/slideshow-qbnr.jpg">
+            </div>
+            <div class="slide">
+                <img src="images/slideshow/slideshow-leaveittous.jpg">
+            </div>
+            <div class="slide">
+                <img src="images/slideshow/slideshow-gse.jpg">
+            </div>
+        </div>
+
+        <!--Navigation Buttons-->
+        <div class="nav-buttons">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+    </div>
+
+    <!--Menu Info Container-->
+    <div class="menu-info-container">
+        <!--Drinks Info-->
+        <div class="info-drinks-container">
+            <a href="menu.html?category=drinks" class="top-image-link">
+                <img src="images/welcome/welcome-limes.jpg" alt="Limes Picture">
+            </a>
+            <div class="info-drinks-container-text">
+                <h1>Drinks</h1>
+                <div class="info-food-example">
+                    <img src="images/menu/greekmountaintea.png" alt="Greek Mountain Tea Picture">
+                    <h3>Mountain Tea</h3>
+                </div>
+                <div class="info-food-example">
+                    <img src="images/menu/greekicedcoffee.png" alt="Greek Iced Coffee Picture">
+                    <h3>Iced Coffee</h3>
+                </div>
+            </div>
+        </div>
+        <!--Breakfast Info-->
+        <div class="info-breakfast-container">
+            <a href="menu.html?category=breakfast" class="top-image-link">
+                <img src="images/welcome/welcome-avocadotoast.jpg" alt="Avocado Toast Picture">
+            </a>
+            <div class="info-breakfast-container-text">
+                <h1>Breakfast</h1>
+                <div class="info-food-example">
+                    <img src="images/menu/avocadotoast.png" alt="Avocado Toast Picture">
+                    <h3>Avocado Toast</h3>
+                </div>
+                <div class="info-food-example">
+                    <img src="images/menu/yogurtparfait.png" alt="Yogurt Parfait Picture">
+                    <h3>Yogurt Parfait</h3>
+                </div>
+            </div>
+        </div>
+        <!--Lunch Info-->
+        <div class="info-lunch-container">
+            <a href="menu.html?category=lunch" class="top-image-link">
+                <img src="images/welcome/welcome-tabbouleh.jpg" alt="Tabbouleh Picture">
+            </a>
+            <div class="info-lunch-container-text">
+                <h1>Lunch</h1>
+                <div class="info-food-example">
+                    <img src="images/menu/gyros.png" alt="Gyros Picture">
+                    <h3>Vegan Gyros</h3>
+                </div>
+                <div class="info-food-example">
+                    <img src="images/menu/greeksalad.png" alt="Greek Salad Picture">
+                    <h3>Greek Salad</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Promo Section-->
+    <div class="promo">
+        <h1><strong>$10 OFF!</strong></h1>
+        <h4>on your first order above $20+</h4>
+        <a href="location.html">LEARN MORE</a>
+    </div>
+
+    <!--Menu-->
+    <h1 id="gallery-header">GALLERY</h1>
+    <!--Menu Teaser Container-->
+    <div class="menu-teaser">
+        <!--Drinks Teaser-->
+            <a href="menu.html?category=drinks"><img src="images/Teasers/drinksteaser.png" class="menu-image"></a>
+
+        <!--Breakfast Teaser-->
+            <a href="menu.html?category=breakfast"><img src="images/Teasers/breakfastteaser.png" class="menu-image"></a>
+
+        <!--Lunch Teaser-->
+            <a href="menu.html?category=lunch"><img src="images/Teasers/lunchteaser.png" class="menu-image"></a>
+    </div>
+
+    <!--Gallery-->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/gallery/WidescreenCheers.png">
+            <a href="location.html" class="gallery-button" id="gallery-location-button">FIND A LOCATION</a>
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/WidescreenQuickBites.png">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/WidescreenLettuce.png">
+            <a href="aboutus.html" class="gallery-button" id="gallery-learn-button">LEARN MORE</a>
+        </div>
+    </div>
+
+    <!--Reviews-->
+    <div class="review-slideshow-container">
+        <div class="review-slides-wrapper">
+            <div class="review-slide">
+                <h1>Mike Brown</h1>
+                <h2>"Great food and excellent service!"</h2>
+                <div class="review-star-rating">★★★★☆</div>
+            </div>
+            <div class="review-slide">
+                <h1>James Ball</h1>
+                <h2>"The ambiance was wonderful and the food was delicious."</h2>
+                <div class="review-star-rating">★★★★★</div>
+            </div>
+            <div class="review-slide">
+                <h1>Kendall O'Brien</h1>
+                <h2>"Good value for money. Will visit again."</h2>
+                <div class="review-star-rating">★★★★★</div>
+            </div>
+            <div class="review-slide">
+                <h1>Amanda Debraun</h1>
+                <h2>"Great experience. The food was good!"</h2>
+                <div class="review-star-rating">★★★★☆</div>
+            </div>
+            <div class="review-slide">
+                <h1>Brody Lee</h1>
+                <h2>Very satisfied with the service. Food was amazing."</h2>
+                <div class="review-star-rating">★★★★☆</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let reviewIndex = 0;
+        const reviewSlidesWrapper = document.querySelector('.review-slides-wrapper');
+        const reviewSlides = document.querySelectorAll('.review-slide');
+        const totalReviews = reviewSlides.length;
+    
+        function updateReviewPosition() {
+            const offset = -reviewIndex * 100; // Calculate the offset based on review index
+            reviewSlidesWrapper.style.transform = `translateX(${offset}%)`; // Update position
+        }
+    
+        function plusReviews(n) {
+            reviewIndex = (reviewIndex + n + totalReviews) % totalReviews;
+            updateReviewPosition();
+        }
+        function autoReview() {
+            reviewIndex = (reviewIndex + 1) % totalReviews;
+            updateReviewPosition();
+            setTimeout(autoReview, 5000); // Change review every 5 seconds
+        }
+        // Initialize
+        updateReviewPosition();
+        autoReview();
+    </script>
+    
+    
+    <!--Footer-->
+    <footer class="footer">
+        <!--Newsletter-->
+        <div class="footer-newsletter">
+            <h2>Stay In Touch!</h2>
+            <p>Sign up for new menu additions, exclusive offers, and more</p>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <!--Description-->
+        <div class="footer-description">
+            <h2>Our Mission</h2>
+            <p>At Harvest Haven, we intend to honor Greek culture and its contributions to culinary art while incorporating our own vegan spin on the classics. This hybrid allows us promote our goal to a sustainable future.</p>
+        </div>
+
+        <!--Contacts for Footer-->
+        <div class="footer-contacts">
+            <h2>Contact Info</h2>
+            <ul>
+                <li>123-456-7890</li>
+                <li>harvesthaven@fake.com</li>
+                <li>8214 Sunset Avenue, Los Angeles, CA 90046</li>
+            </ul>
+        </div>
+
+        <!--Opening Hours for Footer-->
+        <div class="footer-hours">
+            <h2>Opening Hours</h2>
+            <ul>
+                <li>Monday - Friday: 6:00 a.m. - 4:00 p.m.</li>
+                <li>Saturday - Sunday: 6:00 a.m. - 5:00 p.m.</li>
+            </ul>
+        </div>
+
+        <!--Footer Links-->
+        <div class="footer-links">
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+            <!--Social Media Links-->
+            <div class="footer-socialmedia">
+                <a href="https://www.youtube.com" target="_blank" ><img src="images/social-media/youtubelogo.png"></a>
+                <a href="https://www.instagram.com" target="_blank" ><img src="images/social-media/instagramlogo.png"></a>
+                <a href="https://x.com/?mx=2" target="_blank" ><img src="images/social-media/twitterlogo.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
