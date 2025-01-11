@@ -156,6 +156,7 @@ html, body {
     z-index: 2;
     left: -16%;
     transform: rotate(330deg);
+    animation: slideInFromLeft 1s forwards;
 }
 
 /* Leaf image */
