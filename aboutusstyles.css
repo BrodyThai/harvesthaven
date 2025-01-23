@@ -1,0 +1,150 @@
+/* About Us/Meet The Team Sections */
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.aboutus-container img, .meettheteam-container img, .tsa-container img{
+    display: block;
+    margin: 20px;
+    height: 25vw;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+.aboutus-container > div, .meettheteam-container > div, .tsa-container > div{
+    background-color: #7fb241;
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Purpose*/
+
+.aboutus-header-container {
+    display: flex; 
+    align-items: center;
+    margin-left: 3vw;
+}
+
+.aboutus-header {
+    padding: 12px 7px;
+    color:#719c40;
+}
+
+.aboutus-purpose-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 30px;
+}
+
+.aboutus-purpose img{
+    text-align: left;
+}
+
+/* About Us / Why Vegan?*/
+.aboutus-whyvegan-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 30px;
+}
+
+.aboutus-whyvegan img{
+    text-align: right;
+}
+
+/* Meet The Team */
+.aboutus-container, .meettheteam-container h2, h3, h4, p {
+    margin: 6px;
+}
+
+.meettheteam-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.meettheteam-member {
+    background-color: #7fb241;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 60vw;
+}
+
+.meettheteam-text {
+    overflow: scroll;
+}
+
+.meettheteam-member img {
+    display: block;
+    margin-bottom: 20px;
+    height: 30vw;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+/* Our Sponsor TSA */
+.aboutus-tsa-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 30px;
+}
+
+.aboutus-tsa img{
+    text-align: left;
+}
+
+/* IN CASE screen width is less than 800px to improve compatibility */
+@media screen and (max-width: 800px) {
+    .aboutus-container div, .aboutus-tsa {
+        flex-direction: column;
+    }
+
+    .meettheteam-container {
+        flex-direction: column;
+    }
+
+    .meettheteam-member {
+        height: auto;
+    }
+
+    .meettheteam-text {
+        overflow: visible;
+    }
+
+    .meettheteam-container img, .tsa-container img, .aboutus-container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40vw;
+    }
+
+    .aboutus-container h2, p, .tsa-container h2{
+        text-align: center;
+    }
+
+    .meettheteam-container h2, h3, h4, p{
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,28 @@
+/* Locations */
+.locations-container {
+    text-align: center;
+    margin: 3vw;
+}
+
+.sunset-location {
+    display: inline-block;
+    background-color: #7fb241;
+    color: white;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+
+.sponsor-location {
+    display: inline-block;
+    background-color: #7fb241;
+    color: white;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: 25px;
+}
+
+.sponsor-location img{
+    border-radius: 25px;
+    max-width: 400px;
+}
