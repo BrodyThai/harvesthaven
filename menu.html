@@ -8,7 +8,8 @@
     <link rel="icon" type="image/svg+xml" href="images/leavesfavicon.svg">
     <link rel="icon" type="image/png" href="images/leavesfavicon.png">
     <!--Link to stylesheet-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menustyles.css">
     <!--Font Family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
         <!--Links container-->
         <div class="navbar-links">
             <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
+            <a href="menu.html" class="active">Menu</a>
             <a href="aboutus.html">About Us</a>
             <a href="location.html" id="Locations">Locations</a>
         </div>
@@ -49,8 +50,45 @@
     <!--Dynamic Menu Container-->
     <div class="menu-container">
         <div class="page-title">
-            <h1>MENU</h1>
+            <h1>MENU INFO</h1>
         </div>
+        <div class="info-container">
+            <!--Spotlight of The Week-->
+            <div class="feed-container">
+                <img src="images/welcome/welcome-loukoumades.jpg">
+                <div class="feed-container-text">
+                    <h2>Spotlight of The Week</h2>
+                    <h1>LOUKOUMADES</h1>
+                </div>
+            </div>
+        </div>
+        <div class="menu-info-container">
+            <!--Breakfast Info-->
+            <div class="info-breakfast-container">
+                <a href="menu.html?category=breakfast" class="top-image-link">
+                    <img src="images/welcome/welcome-avocadotoast.jpg" alt="Avocado Toast Picture">
+                </a>
+                <div class="info-breakfast-container-text">
+                    <h1>Breakfast</h1>
+                    <h3>From 6-11 AM, Harvest Haven offers a breakfast menu that caters to the morning appetite for Greek cuisine. From savory Spanokopita to sweet Yogurt Parfaits we hope to satisfy any craving someone may bring to our establishment. Please feel free to ask our staff for questions about calories and dietary restrictions.</h3>
+                </div>
+            </div>
+            <!--Lunch Info-->
+            <div class="info-lunch-container">
+                <a href="menu.html?category=lunch" class="top-image-link">
+                    <img src="images/welcome/welcome-tabbouleh.jpg" alt="Tabbouleh Picture">
+                </a>
+                <div class="info-lunch-container-text">
+                    <h1>Lunch</h1>
+                    <h3>From 11-5 PM, we at Harvest Haven are delighted to invite you to try our lunch menu. We make sure everything is cooked to order with the freshest ingredients possible. Thanks to a variety of options, we believe anyone can find a meal at Harvest Haven they are guaranteed to enjoy.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-items-title">
+            <h1>MENU ITEMS</h1>
+        </div>
+        
         <div class="menu-slider">
             <button class="menu-button" id="all" data-category="all">All</button>
             <button class="menu-button" id="drinks" data-category="drinks">Drinks</button>
