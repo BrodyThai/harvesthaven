@@ -1,0 +1,264 @@
+/* General Styling for all webpages */
+
+html, body {
+    font-family: "Quicksand", serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+/* Navigation details */
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: rgb(175, 175, 175);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.navbar-links a.active {
+    color: #7fb241;
+}
+
+#Locations {
+    background-color: #7fb241;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+#Locations:hover {
+    background-color: #4CAF50;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+.navbar-logo{
+    display: flex; 
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar-logo img{
+    margin-top: 5px;
+}
+
+.navbar-logo a {
+   padding: 12px 7px;
+   color:#719c40;
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+/* Dropdown icon details */
+.dropdown-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: #7fb241;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* IN CASE screen width is less than 800px to improve compatibility */
+@media screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /* Initially hide the navbar links on small screens */
+    .navbar-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links a {
+        text-align: center;
+        padding: 12px 16px;
+        width: 90%;
+    }
+
+    .dropdown-icon {
+        display: block; /* Show dropdown menu icon */
+    }
+
+    /* Show links when menu is toggled */
+    .navbar-links.show {
+        display: flex;  /* Display navbar links */
+    }
+}
+
+/* Footer */
+
+.footer {
+    background-color: #7fb241;
+    color: white;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* Newsletter Styling */
+.footer-newsletter {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-newsletter input {
+    height: 9px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.footer-newsletter button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 0px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.footer-newsletter button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+.footer-description, .footer-contacts, .footer-hours {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-newsletter, .footer-description, .footer-contacts, .footer-hours {
+    margin: 10px;
+}
+
+.footer-contacts ul, .footer-hours ul, .footer-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links {
+   margin-top: 20px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-socialmedia img {
+    margin-top: 30px;
+    position: relative;
+    height: 40px;
+}
+
+.footer-links a:hover {
+    color: #45a049;
+}
+
+/* IN CASE screen width is less than 800px to improve compatibility */
+@media screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+/* Page Title Design */
+.page-title {
+    color: white;
+    background-color: #7fb241;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    overflow: hidden;
+    animation: slideInFromTop 1s forwards;
+}
+
+/* Animations */
+
+/* Animation for leaf image shaking effect */
+@keyframes shake {
+    0% {
+        transform: rotate(55deg); /* Starting rotation (to the right) */
+    }
+    50% {
+        transform: rotate(45deg); /* Slight rotation to the left */
+    }
+    100% {
+        transform: rotate(55deg); /* Back to the starting rotation */
+    }
+}
+
+/* Animation for sliding */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);  /* Start offscreen to the left */
+        opacity: 0;  /* Fully transparent */
+    }
+    100% {
+        transform: translateX(0);  /* End in its normal position */
+        opacity: 1;  /* Fully visible */
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);  /* Start offscreen to the left */
+        opacity: 0;  /* Fully transparent */
+    }
+    100% {
+        transform: translateY(0);  /* End in its normal position */
+        opacity: 1;  /* Fully visible */
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
