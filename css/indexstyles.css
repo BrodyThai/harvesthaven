@@ -396,58 +396,6 @@ input[type="radio"] {
     }
 }
 
-.gallery {
-    position: relative;
-    flex-direction: column; /* Stack items vertically */
-    display: flex;
-    width: 100%;
-}
-
-.gallery-item {
-   margin: 0;
-   flex-shrink: 0;
-}
-
-.gallery img {
-    display: block;
-    width: 100%;
-}
-
-.gallery-button {
-    position: absolute;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.2em;
-    border-radius: 25px;
-    text-decoration: none;
-    left: 50%;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-}
-/* Positioning the gallery buttons */
-
-#gallery-location-button {
-    top: 27%;
-    transform: translate(-50%, 50%);
-}
-
-#gallery-learn-button {
-    bottom: 5%;
-    transform: translate(-50%, 50%);
-}
-
-.gallery-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-/* IN CASE screen width is less than 800px to improve compatibility */
-@media screen and (max-width: 800px) {
-    .gallery-button {
-        font-size: .8em;
-        padding: 6px 12px;
-    }
-}
-
 /* Reviews */
 
 .review-slideshow-container {
