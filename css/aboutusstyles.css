@@ -26,6 +26,7 @@
     margin: 20px;
     border-radius: 25px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.3vw;
 }
 
 /* About Us Purpose*/
@@ -130,6 +131,10 @@
 
     .meettheteam-text {
         overflow: visible;
+    }
+
+    .aboutus-container > div, .meettheteam-container > div, .tsa-container > div{
+        font-size: 14px;
     }
 
     .meettheteam-container img, .tsa-container img, .aboutus-container img {
