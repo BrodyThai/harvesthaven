@@ -89,6 +89,7 @@
     height: 40vh;
     display: block;
     object-fit: cover;
+    transition: filter 0.3s ease;
 }
 
 .top-image-link img:hover {
