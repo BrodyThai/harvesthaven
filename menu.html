@@ -7,6 +7,8 @@
     <!--Favicon-->
     <link rel="icon" type="image/svg+xml" href="images/leavesfavicon.svg">
     <link rel="icon" type="image/png" href="images/leavesfavicon.png">
+    <!--Link to Javascript-->
+    <script defer src="app.js"></script>
     <!--Link to stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/menustyles.css">
@@ -29,7 +31,7 @@
         <div class="navbar-links">
             <a href="index.html">Home</a>
             <a href="menu.html" class="active">Menu</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.html">Reference</a>
             <a href="location.html" id="Locations">Locations</a>
         </div>
 
@@ -52,16 +54,19 @@
         <div class="page-title">
             <h1>MENU INFO</h1>
         </div>
-        <div class="info-container">
-            <!--Spotlight of The Week-->
-            <div class="feed-container">
-                <img src="images/welcome/welcome-loukoumades.jpg">
-                <div class="feed-container-text">
-                    <h2>Spotlight of The Week</h2>
-                    <h1>LOUKOUMADES</h1>
+        <section class="hidden"> <!--Scroll Animation-->
+            <div class="info-container">
+                <!--Spotlight of The Week-->
+                <div class="feed-container">
+                    <img src="images/welcome/welcome-loukoumades.jpg">
+                    <div class="feed-container-text">
+                        <h2>Spotlight of The Week</h2>
+                        <h1>LOUKOUMADES</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="hidden"> <!--Scroll Animation-->
         <div class="menu-info-container">
             <!--Breakfast Info-->
             <div class="info-breakfast-container">
@@ -83,9 +88,10 @@
                     <h3>From 11-5 PM, we at Harvest Haven are delighted to invite you to try our lunch menu. We make sure everything is cooked to order with the freshest ingredients possible. Thanks to a variety of options, we believe anyone can find a meal at Harvest Haven they are guaranteed to enjoy.</h3>
                 </div>
             </div>
+            </section>
         </div>
 
-        <div class="menu-items-title">
+        <div class="div-title">
             <h1>MENU ITEMS</h1>
         </div>
         
@@ -97,6 +103,7 @@
         </div>
 
     <!-- Menu Grid -->
+    <section class="hidden"> <!--Scroll Animation-->
     <div class="menu-grid">
     <!-- Breakfast Item: Loukoumades -->
     <div class="menu-item breakfast" onclick="toggleIngredients(this)">
@@ -378,6 +385,7 @@
         </div>
     </div>
 </div>
+    </section>
 
     <!--Script for Menu Slider-->
     <script>
