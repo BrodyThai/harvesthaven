@@ -79,8 +79,8 @@ html, body {
     margin-right: 20px;
 }
 
-/* IN CASE screen width is less than 800px to improve compatibility */
-@media screen and (max-width: 800px) {
+/* IN CASE screen width is less than 850px to improve compatibility */
+@media screen and (max-width: 850px) {
     .navbar {
         flex-direction: column;
         justify-content: flex-start;
@@ -212,7 +212,27 @@ html, body {
     animation: slideInFromTop 1s forwards;
 }
 
+.div-title {
+    background-color: #7fb241;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+}
+
 /* Animations */
+
+/* Scroll Animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
 
 /* Animation for leaf image shaking effect */
 @keyframes shake {
