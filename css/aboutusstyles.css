@@ -65,6 +65,7 @@
     padding: 20px;
     margin: 10px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .aboutus-container img, .meettheteam-container img, .tsa-container img{
@@ -129,7 +130,7 @@
 .meettheteam-container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     overflow: scroll;
     overflow-y: hidden;
 }
@@ -179,6 +180,7 @@
 
     .meettheteam-container {
         flex-direction: column;
+        width: 100%;
     }
 
     .meettheteam-member {
