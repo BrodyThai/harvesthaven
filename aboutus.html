@@ -7,6 +7,8 @@
     <!--Favicon-->
     <link rel="icon" type="image/svg+xml" href="images/leavesfavicon.svg">
     <link rel="icon" type="image/png" href="images/leavesfavicon.png">
+    <!--Link to Javascript-->
+    <script defer src="app.js"></script>
     <!--Link to stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/aboutusstyles.css">
@@ -29,7 +31,7 @@
         <div class="navbar-links">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
-            <a href="aboutus.html" class="active">About Us</a>
+            <a href="aboutus.html" class="active">Reference</a>
             <a href="location.html" id="Locations">Locations</a>
         </div>
 
@@ -46,13 +48,36 @@
             }
         </script>
     </div>
-    
+
+    <!--Reference Section-->
     <div class="page-title">
-        <h1>About Us</h1>
+        <h1>REFERENCE</h1>
     </div>
+
+    <section class="hidden"> <!--Scroll Animation-->
+    <div class="reference">
+        <div class="copyright-checklist">
+            <div class="reference-text">
+                <h1>Student Copyright Checklist</h1>
+            </div>
+            <a href="https://docs.google.com/document/d/19Rcta_1CnKfHilWZuMSfJh_gVzHWPlmep1lBXcH5Sk0/edit?tab=t.0" target="_blank"><img src="images/aboutus/Student-Copyright-Checklist.png" alt="student copyright checklist"></a>
+        </div>
+        <div class="worklog">
+            <div class="reference-text">
+                <h1>Student Work Log</h1>
+            </div>
+            <a href="images/aboutus/Technology-Student-Association-Work-Log.png"><img src="images/aboutus/Technology-Student-Association-Work-Log.png" alt="student work log"></a>
+        </div>
+    </div>
+    </section>
     
     <!--About Us Container-->
+    <div class="div-title">
+        <h1>ABOUT US</h1>
+    </div>
+
     <div class="aboutus">
+        <section class="hidden"> <!--Scroll Animation-->
         <div class="aboutus-container">
             <!--Our Purpose-->
             <div class="aboutus-purpose">
@@ -71,8 +96,10 @@
                 <img src="images/aboutus/vineyardwhyvegan.jpg" alt="A Vineyard">
             </div>
         </div>
+        </section>
         
         <!--Meet The Team-->
+        <section class="hidden"> <!--Scroll Animation-->
         <div class="aboutus-header-container">
             <img src="images/leavesfavicon.png" alt="Vegan Logo">
             <h1 class="aboutus-header">Meet The Team</h1>
@@ -124,8 +151,10 @@
                 </div>
             </div>
         </div>
+        </section>
     
         <!--TSA About Us-->
+        <section class="hidden"> <!--Scroll Animation-->
         <div class="aboutus-header-container">
             <img src="images/leavesfavicon.png" alt="Vegan Logo">
             <h1 class="aboutus-header">Our Sponsor (TSA)</h1>
@@ -140,6 +169,7 @@
                 </div>
             </div>
         </div>
+        </section>
     </div>
 
     <!--Footer-->
