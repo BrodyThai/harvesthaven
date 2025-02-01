@@ -1,3 +1,59 @@
+/* Reference Section */
+.reference {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.reference > div {
+    display: flex;
+    height: 20vw;
+    border-radius: 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-size: 1.3vw;
+    overflow: hidden;
+}
+
+.reference div a{
+    width: 50%;
+    object-fit: cover;
+}
+
+.reference-text {
+    color: #7fb241;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+
+}
+
+.worklog {
+    margin-top: 20px;
+}
+
+/* IN CASE screen width is less than 800px to improve compatibility */
+@media screen and (max-width: 800px) {
+    .reference > div {
+        flex-direction: column;
+        height: 40vw;
+        font-size: 2vw;
+    }
+    .reference div a {
+        width: 100%;
+        height: 50%;
+    }
+}
+
 /* About Us/Meet The Team Sections */
 
 .aboutus {
