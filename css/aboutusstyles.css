@@ -24,6 +24,7 @@
 .reference div a{
     width: 50%;
     object-fit: cover;
+    overflow: scroll;
 }
 
 .reference-text {
