@@ -6,6 +6,8 @@
     <title>Harvest Haven</title>
     <!--Favicon-->
     <link rel="icon" type="image/png" href="images/leavesfavicon.png">
+    <!--Link to Javascript-->
+    <script defer src="app.js"></script>
     <!--Link to stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/indexstyles.css">
@@ -27,7 +29,7 @@
         <div class="navbar-links">
             <a href="index.html" class="active">Home</a>
             <a href="menu.html">Menu</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.html">Reference</a>
             <a href="location.html" id="Locations">Locations</a>
         </div>
 
@@ -63,33 +65,36 @@
     </div>
 
     <!--Slideshow container-->
-    <div class="slideshow-container">
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
-
-        <!--Slides-->
-        <div class="slides">
-            <div class="slide">
-                <img src="images/slideshow/slideshow-qbnr.jpg">
+    <section class="hidden"> <!--Scroll Animation-->
+        <div class="slideshow-container">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+    
+            <!--Slides-->
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/slideshow/slideshow-qbnr.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/slideshow/slideshow-leaveittous.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/slideshow/slideshow-gse.jpg">
+                </div>
             </div>
-            <div class="slide">
-                <img src="images/slideshow/slideshow-leaveittous.jpg">
-            </div>
-            <div class="slide">
-                <img src="images/slideshow/slideshow-gse.jpg">
+    
+            <!--Navigation Buttons-->
+            <div class="nav-buttons">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
             </div>
         </div>
+    </section>
 
-        <!--Navigation Buttons-->
-        <div class="nav-buttons">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-        </div>
-    </div>
-
-    <!--Menu Info Container-->
+    <section class="hidden"> <!--Scroll Animation-->
+        <!--Menu Info Container-->
     <div class="menu-info-container">
         <!--Drinks Info-->
         <div class="info-drinks-container">
@@ -143,6 +148,7 @@
             </div>
         </div>
     </div>
+    </section>
 
     <!--Promo Section-->
     <div class="promo">
@@ -151,20 +157,24 @@
         <a href="location.html">LEARN MORE</a>
     </div>
 
-    <!--Gallery Menu-->
+    <!--Gallery-->
     <h1 id="gallery-header">GALLERY</h1>
+
+    <section class="hidden"> <!--Scroll Animation-->
     <!--Menu Teaser Container-->
     <div class="menu-teaser">
         <!--Drinks Teaser-->
-            <a href="menu.html?category=drinks"><img src="images/teasers/drinksteaser.png" class="menu-image"></a>
+            <a href="menu.html?category=drinks"><img src="images/Teasers/drinksteaser.png" class="menu-image"></a>
 
         <!--Breakfast Teaser-->
-            <a href="menu.html?category=breakfast"><img src="images/teasers/breakfastteaser.png" class="menu-image"></a>
+            <a href="menu.html?category=breakfast"><img src="images/Teasers/breakfastteaser.png" class="menu-image"></a>
 
         <!--Lunch Teaser-->
-            <a href="menu.html?category=lunch"><img src="images/teasers/lunchteaser.png" class="menu-image"></a>
+            <a href="menu.html?category=lunch"><img src="images/Teasers/lunchteaser.png" class="menu-image"></a>
     </div>
+    </section>
 
+    <section class="hidden"> <!--Scroll Animation-->
     <!--Reviews-->
     <div class="review-slideshow-container">
         <div class="review-slides-wrapper">
@@ -220,7 +230,7 @@
         updateReviewPosition();
         autoReview();
     </script>
-    
+    </section>
     
     <!--Footer-->
     <footer class="footer">
@@ -228,7 +238,7 @@
         <div class="footer-newsletter">
             <h2>Stay In Touch!</h2>
             <p>Sign up for new menu additions, exclusive offers, and more</p>
-            <form action="#" method="POST">
+            <form action="#" method="POST" target="_blank">
                 <input type="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
             </form>
